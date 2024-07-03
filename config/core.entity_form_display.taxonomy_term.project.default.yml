@@ -1,0 +1,88 @@
+uuid: 06564585-dd61-4702-abb8-f0a991fb3534
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.project.field_customer_name
+    - field.field.taxonomy_term.project.field_image
+    - field.field.taxonomy_term.project.field_name_of_project
+    - field.field.taxonomy_term.project.field_starring_date
+    - field.field.taxonomy_term.project.field_user
+    - image.style.thumbnail
+    - taxonomy.vocabulary.project
+  module:
+    - datetime
+    - image
+    - path
+    - text
+id: taxonomy_term.project.default
+targetEntityType: taxonomy_term
+bundle: project
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_customer_name:
+    type: string_textfield
+    weight: 102
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 105
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_name_of_project:
+    type: string_textfield
+    weight: 101
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_starring_date:
+    type: datetime_default
+    weight: 104
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_user:
+    type: options_buttons
+    weight: 106
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 100
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden: {  }

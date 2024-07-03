@@ -1,0 +1,25 @@
+uuid: 15afb289-62b9-4f43-9900-ac0fd2eb058a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.add-menu
+  module:
+    - system
+  theme:
+    - olivero
+id: olivero_menuforadd
+theme: olivero
+region: hero
+weight: -7
+provider: null
+plugin: 'system_menu_block:add-menu'
+settings:
+  id: 'system_menu_block:add-menu'
+  label: 'Menu for add'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

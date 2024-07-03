@@ -1,0 +1,9 @@
+uuid: 2f50b959-c731-4727-a434-8fe3d73086ff
+langcode: en
+status: true
+dependencies: {  }
+name: Skills
+vid: skills
+description: 'This describes employee skills'
+weight: 0
+new_revision: false

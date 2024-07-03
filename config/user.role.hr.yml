@@ -1,0 +1,37 @@
+uuid: e232493f-3c74-444c-a740-cf27d79ff31e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.project
+    - taxonomy.vocabulary.skills
+  module:
+    - comment
+    - create_user_permission
+    - roleassign
+    - taxonomy
+    - toolbar
+id: hr
+label: HR
+weight: 5
+is_admin: null
+permissions:
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer account settings'
+  - 'administer comments'
+  - 'administer permissions'
+  - 'administer users'
+  - 'assign roles'
+  - 'cancel account'
+  - 'create terms in project'
+  - 'create terms in skills'
+  - 'create users'
+  - 'delete terms in skills'
+  - 'edit own comments'
+  - 'edit terms in skills'
+  - 'revert term revisions in skills'
+  - 'select account cancellation method'
+  - 'view term revisions in skills'
+  - 'view user email addresses'

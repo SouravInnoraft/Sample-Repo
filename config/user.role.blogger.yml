@@ -1,0 +1,21 @@
+uuid: 0be2ba43-df12-431d-89d8-64479cc38d0b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.blog
+  module:
+    - comment
+    - node
+id: blogger
+label: Blogger
+weight: 4
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'administer comments'
+  - 'create blog content'
+  - 'delete own blog content'
+  - 'edit own blog content'
+  - 'edit own comments'
+  - 'view own unpublished content'

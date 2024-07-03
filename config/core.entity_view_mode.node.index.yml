@@ -1,0 +1,11 @@
+uuid: bd8c4b48-2804-45b7-9f06-6558f7735bbc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.index
+label: index
+description: 'index page of website'
+targetEntityType: node
+cache: true

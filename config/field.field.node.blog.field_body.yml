@@ -1,0 +1,30 @@
+uuid: 5e314dbe-7ef7-4581-80b5-f30e9e3654a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - node.type.blog
+  module:
+    - text
+id: node.blog.field_body
+field_name: field_body
+entity_type: node
+bundle: blog
+label: body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - full_html
+field_type: text_with_summary
