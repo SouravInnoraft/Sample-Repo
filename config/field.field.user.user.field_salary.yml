@@ -1,0 +1,24 @@
+uuid: dc768854-efcb-4f3f-a6b0-605580175637
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_salary
+  module:
+    - user
+id: user.user.field_salary
+field_name: field_salary
+entity_type: user
+bundle: user
+label: Salary
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1.0
+  max: null
+  prefix: '₹ '
+  suffix: ''
+field_type: decimal

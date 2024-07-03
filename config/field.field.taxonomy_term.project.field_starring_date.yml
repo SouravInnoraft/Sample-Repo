@@ -1,0 +1,21 @@
+uuid: c3d9982a-dd5f-485d-a925-1e1b9291fea8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_starring_date
+    - taxonomy.vocabulary.project
+  module:
+    - datetime
+id: taxonomy_term.project.field_starring_date
+field_name: field_starring_date
+entity_type: taxonomy_term
+bundle: project
+label: 'Starring date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

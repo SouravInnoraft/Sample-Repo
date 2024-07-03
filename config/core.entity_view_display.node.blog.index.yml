@@ -1,0 +1,142 @@
+uuid: 47335372-b8f2-4eaf-b4f7-810c88de42a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.blog_comment.default
+    - core.entity_view_mode.node.index
+    - field.field.node.blog.field_about
+    - field.field.node.blog.field_body
+    - field.field.node.blog.field_comment
+    - field.field.node.blog.field_photo
+    - field.field.node.blog.field_quote
+    - field.field.node.blog.field_read_more
+    - field.field.user.user.field_tech_skills
+    - field.field.user.user.user_picture
+    - node.type.blog
+  module:
+    - comment
+    - image
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'section 1'
+          context_mapping: {  }
+          column_widths: 33-67
+        components:
+          d42497ef-d0be-4f3a-8935-d2bcebfcf592:
+            uuid: d42497ef-d0be-4f3a-8935-d2bcebfcf592
+            region: first
+            configuration:
+              id: 'field_block:user:user:user_picture'
+              label: Picture
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: '@user.current_user_context:current_user'
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: above
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          940620cf-875e-46c6-960d-94d8c342118d:
+            uuid: 940620cf-875e-46c6-960d-94d8c342118d
+            region: second
+            configuration:
+              id: 'field_block:user:user:name'
+              label: Name
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: '@user.current_user_context:current_user'
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          ea56c504-2de2-4615-a83a-dc91688e6269:
+            uuid: ea56c504-2de2-4615-a83a-dc91688e6269
+            region: second
+            configuration:
+              id: 'field_block:user:user:field_tech_skills'
+              label: 'Tech Skills'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: '@user.current_user_context:current_user'
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.blog.index
+targetEntityType: node
+bundle: blog
+mode: index
+content:
+  field_about:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_comment:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 105
+    region: first
+  field_photo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_quote:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_body: true
+  field_read_more: true

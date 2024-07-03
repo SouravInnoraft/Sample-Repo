@@ -1,0 +1,27 @@
+uuid: 0861badc-c9e5-46c9-82cf-40329af606b8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content_alia
+label: 'Content alias'
+type: 'canonical_entities:node'
+pattern: '/[node:content-type]/[node:title]'
+selection_criteria:
+  ae28a7f6-86c0-4d92-9350-6cecf4635d72:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: ae28a7f6-86c0-4d92-9350-6cecf4635d72
+    context_mapping:
+      node: node
+    bundles:
+      article: article
+      blog: blog
+      employee: employee
+      employee_skill: employee_skill
+      page: page
+      project: project
+selection_logic: and
+weight: -5
+relationships: {  }

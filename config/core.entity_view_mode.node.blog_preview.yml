@@ -1,0 +1,11 @@
+uuid: 767f8f45-92aa-43bc-a83c-ad5db2ac6c34
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.blog_preview
+label: 'Blog preview'
+description: ''
+targetEntityType: node
+cache: true

@@ -1,0 +1,11 @@
+uuid: 42472d44-3998-41d0-ac41-94aa5f1eda61
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.index
+label: index
+description: ''
+targetEntityType: user
+cache: true

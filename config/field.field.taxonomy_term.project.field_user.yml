@@ -1,0 +1,33 @@
+uuid: 8d84d9c7-75ad-483a-8c1d-4a5418fb1948
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_user
+    - taxonomy.vocabulary.project
+id: taxonomy_term.project.field_user
+field_name: field_user
+entity_type: taxonomy_term
+bundle: project
+label: User
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: role
+      role:
+        administrator: administrator
+        blogger: blogger
+        hr: hr
+    include_anonymous: false
+field_type: entity_reference

@@ -1,0 +1,14 @@
+uuid: cc701e63-9170-4524-b777-460880214785
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user_alias
+label: 'User alias'
+type: 'canonical_entities:user'
+pattern: '/employee/[user:account-name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }
